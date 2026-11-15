@@ -1,69 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Terms of Service — Slice Kingdom</title>
-<link rel="icon" href="assets/ui/icon.png" type="image/png" />
-<link rel="stylesheet" href="pages.css" />
+<meta name="description" content="The terms that apply when you download and play Slice Kingdom.">
+<link rel="icon" href="../assets/ui/icon-512.webp">
+<link rel="stylesheet" href="style.css">
+<script>
+  /* Inside the game's page viewer: hide the site header/footer and show the Home button. */
+  if (window.self !== window.top) document.documentElement.classList.add('embedded');
+</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="top-nav"><a href="index.html" class="home-icon-btn" aria-label="Back to Home" onclick="if (window.history.length > 1) { window.history.back(); return false; }"><img src="assets/ui/buttons/home.png" alt="Home" /></a></div>
-  <div class="about-header">
-    <img src="assets/ui/icon.png" class="crest-mini" alt="Slice Kingdom" />
-    <div>
+
+<button class="home-fab" onclick="window.parent.postMessage('slicekingdom-go-home', '*')" aria-label="Home"></button>
+
+<div class="top">
+  <div class="wrap">
+    <header class="site">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="../assets/ui/icon-512.webp" alt="Slice Kingdom icon">
+        <span class="brand-name">Slice Kingdom</span>
+      </a>
+      <nav class="site" aria-label="Legal pages">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html" class="current" aria-current="page">Terms of Service</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span class="tile"></span> Legal</div>
       <h1>Terms of Service</h1>
-      <span class="badge">Slice Kingdom</span>
-    </div>
+      <p class="lede">The terms that apply when you download and play Slice Kingdom.</p>
+      <p class="meta">Last updated: November 2026</p>
+    </section>
   </div>
+</div>
 
+<main class="content">
+  <div class="wrap">
 
-  <div class="doc">
     <h2>Acceptance of Terms</h2>
-    <p>By downloading, installing, or playing Slice Kingdom, developed by <strong>Gemlight Empress</strong>, you agree to these Terms of Service. If you do not agree, please do not use the Game.</p>
+    <p>By downloading, installing, or playing Slice Kingdom, you agree to these Terms of Service. If you do not agree, please do not use the Game.</p>
 
-    <h2>Google Play Games Sign-In &amp; Cloud Save</h2>
-    <p>A Google Play Games account is required to play the Game. Signing in links your Achievements and Leaderboard scores to your Google Play account, and backs up your in-game progress, currencies, and unlocks via Google Play Games Cloud Save, subject to Google's own Terms of Service in addition to these Terms. See the Privacy Policy for details on how Cloud Save and multi-device sync work.</p>
+    <div class="section-divider"><span></span><span></span><span></span></div>
 
     <h2>License</h2>
-    <p>Gemlight Empress grants you a limited, non-exclusive, non-transferable, revocable license to install and use the Game on devices you own or control, for personal, non-commercial entertainment purposes.</p>
+    <p>Gemlight Empress grants you a limited, non-exclusive, non-transferable, and revocable license to install and play the Game on devices that you own or control.</p>
+    <p>This license is provided for your personal, non-commercial entertainment only.</p>
 
-    <h2>Virtual Items</h2>
-    <p>The Game contains virtual currencies — <strong>Golden Seeds</strong> and <strong>Royal Grapes</strong> — and virtual items (Boards, Swords, Boosters, and other cosmetic or gameplay unlocks) that can be earned through gameplay or purchased with real money via Google Play Billing. Virtual currencies and items have no real-world monetary value, cannot be redeemed for cash, and remain the property of Gemlight Empress. Virtual item balances may be reset if your save data is deleted or your account is terminated for a violation of these Terms.</p>
+    <h2>In-Game Currency &amp; Items</h2>
+    <p>Golden Seeds, Royal Grapes, boosters (Mega Strike, Golden Touch, Lucky Charm, Second Breath and Royal Favor), lives, boards, swords and themes, and other in-game items have no real-world monetary value.</p>
+    <p>New players start with a basic board, sword and trail, and a first-time tutorial walks through slicing fruit and starting a game.</p>
+    <p>These items:</p>
+    <ul>
+      <li>Cannot be exchanged for real money.</li>
+      <li>Cannot be transferred, sold, or given to another person.</li>
+      <li>Exist only within the Game.</li>
+      <li>Do not represent real currency or property.</li>
+    </ul>
+    <p>We may adjust, modify, or remove in-game items when necessary, including to correct errors, address technical issues, or balance and improve the Game.</p>
+    <p>You may also erase your in-game items and progress yourself by using &ldquo;Reset Progress&rdquo; in Settings.</p>
 
     <h2>In-App Purchases</h2>
-    <p>Purchases are processed by Google Play Billing and are subject to Google Play's refund policies. Golden Seeds packs, Royal Grapes packs, and any premium upgrades are described in the in-game Treasury prior to purchase.</p>
+    <p>You may purchase Royal Grapes using real money through Google Play. Grapes are sold in fixed packs, and the price shown at checkout includes any taxes Google applies for your country.</p>
+    <p>All purchases are processed through Google Play Billing and are subject to Google&rsquo;s applicable terms, conditions, and payment policies.</p>
+    <p>Purchases are delivered to the account or device used to make the purchase.</p>
+    <p>Except where required by applicable law, purchases are final and non-refundable. Refund requests are handled according to Google&rsquo;s applicable Google Play refund policies.</p>
+    <p>If your progress is erased using &ldquo;Reset Progress&rdquo;, by clearing the Game&rsquo;s data, or by uninstalling the Game, any associated in-game progress and purchased Royal Grapes may also be lost and cannot necessarily be restored.</p>
 
     <h2>Advertising</h2>
-    <p>The free version of the Game displays advertising supplied by Google AdMob, including banner, interstitial, rewarded, and app-open ad formats. Rewarded ads are optional and grant in-game benefits (such as Golden Seeds or a Second Wind revive) only after the ad is completed.</p>
-
-    <h2>Acceptable Use</h2>
+    <p>The Game is free to play and is supported by advertising through Google AdMob.</p>
+    <p>Advertisements may include:</p>
     <ul>
-      <li>Do not reverse-engineer, decompile, or modify the Game except as permitted by law.</li>
-      <li>Do not use cheats, bots, or exploits to manipulate scores, currency, or Leaderboards.</li>
-      <li>Do not use the Game for any unlawful purpose.</li>
+      <li>Banner advertisements in a reserved strip at the bottom of the screen, on every screen except the home screen and during gameplay. The strip never covers the game.</li>
+      <li>Full-screen advertisements shown between games.</li>
+      <li>Optional rewarded advertisements that you can choose to watch for a bonus: an extra life to continue when your lives run out, or opening a chest.</li>
+    </ul>
+    <p>A reward is given only when a rewarded advertisement is watched to the end. In the European Economic Area, the United Kingdom and Switzerland, Google&rsquo;s consent form is shown before ads load, and personalised advertising can be turned off at any time in your device&rsquo;s advertising settings.</p>
+    <p>Advertisements are provided by Google and third-party advertisers. The availability, frequency, and content of advertisements are not guaranteed.</p>
+
+    <h2>Google Play Games &amp; Cloud Save</h2>
+    <p>Signing in with Google Play Games is optional and the Game is fully playable without it, offline included. The Game attempts to sign in quietly in the background when it starts; if that does not succeed you continue as a guest, and you can sign in later with &ldquo;Sign in with Google Play&rdquo; in Settings &rarr; Player Profile.</p>
+    <p>If you sign in, your game progress may be backed up to Google Play Games Cloud Save, subject to Google&rsquo;s applicable terms and policies.</p>
+    <p>Using &ldquo;Reset Progress&rdquo; also replaces your Cloud Save with a fresh start.</p>
+    <p>Gemlight Empress is not responsible for data loss caused by Google service outages, Google account issues, device problems, connectivity issues, or other circumstances outside our reasonable control.</p>
+
+    <h2>Intellectual Property</h2>
+    <p>The Game and its content, including its:</p>
+    <ul>
+      <li>Artwork</li>
+      <li>Characters</li>
+      <li>Music</li>
+      <li>Sounds</li>
+      <li>Text</li>
+      <li>Graphics</li>
+      <li>Software</li>
+      <li>Other game content</li>
+    </ul>
+    <p>are owned by Gemlight Empress or its licensors and are protected.</p>
+    <p>These Terms do not grant you any ownership rights in the Game or its content.</p>
+
+    <h2>Prohibited Conduct</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Reverse-engineer, decompile, disassemble, or modify the Game&rsquo;s code or save data.</li>
+      <li>Use cheats, automated tools, bots, exploits, or other unauthorized methods to gain an unfair advantage.</li>
+      <li>Use unauthorized methods to obtain in-game items without paying for them.</li>
+      <li>Interfere with or attempt to disrupt the operation of the Game or its services.</li>
+      <li>Use the Game in any way that violates applicable laws or regulations.</li>
     </ul>
 
-    <h2>Daily Challenge &amp; Leaderboards</h2>
-    <p>Daily Challenge content and Leaderboard rankings (via Google Play Games Services) are provided for entertainment purposes. Gemlight Empress may reset, adjust, or discontinue challenge content at its discretion.</p>
-
-    <h2>Disclaimer of Warranties</h2>
-    <p>The Game is provided "as is" without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose, non-infringement, and uninterrupted or error-free operation.</p>
-
-    <h2>Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law, Gemlight Empress shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Game.</p>
+    <h2>Eligibility</h2>
+    <p>The Game is intended for a general audience. If you are below the age of majority where you live, you may use the Game only with the involvement of a parent or guardian, and any purchase must be made with their permission and with the account holder&rsquo;s consent.</p>
 
     <h2>Termination</h2>
     <p>We may suspend or terminate access to the Game for violation of these Terms.</p>
 
+    <h2>Disclaimer of Warranties</h2>
+    <p>The Game is provided &ldquo;as is&rdquo; without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose, non-infringement, and uninterrupted or error-free operation.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Gemlight Empress is not liable for any indirect, incidental, or consequential damages arising from your use of the Game, including loss of progress or in-game items.</p>
+
+    <h2>Governing Law</h2>
+    <p>These Terms are governed by the laws of India, without regard to conflict-of-law rules. Nothing in these Terms removes any right you have under the mandatory consumer law of the country you live in.</p>
+
     <h2>Changes to These Terms</h2>
-    <p>We may revise these Terms from time to time. Continued use of the Game after changes constitutes acceptance of the revised Terms.</p>
+    <p>We may update these Terms periodically. Continued use of the Game after changes take effect constitutes acceptance of the revised Terms.</p>
+    <p>If you do not agree with the updated Terms, please stop using the Game.</p>
 
     <h2>Contact</h2>
-    <p>Questions about these Terms can be directed to Gemlight Empress at <strong>gemlightempress@gmail.com</strong>.</p>
+    <div class="contact-card">
+      <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--gold)"></span><span style="background:var(--mint)"></span></div>
+      <div>
+        <p><strong>Questions about these Terms of Service?</strong></p>
+        <p><strong>Gemlight Empress</strong><br>Email: <a href="mailto:support@gemlightempress.com">support@gemlightempress.com</a></p>
+      </div>
+    </div>
+
   </div>
-  <p class="footer-note">Slice Kingdom · Gemlight Empress</p>
-</div>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div class="foot-brand"><img src="../assets/ui/icon-512.webp" alt=""><span>&copy; 2026 Gemlight Empress. All rights reserved.</span></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>

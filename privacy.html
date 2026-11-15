@@ -1,77 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Privacy Policy — Slice Kingdom</title>
-<link rel="icon" href="assets/ui/icon.png" type="image/png" />
-<link rel="stylesheet" href="pages.css" />
+<meta name="description" content="What Slice Kingdom collects, why, and what choices you have about it.">
+<link rel="icon" href="../assets/ui/icon-512.webp">
+<link rel="stylesheet" href="style.css">
+<script>
+  /* Inside the game's page viewer: hide the site header/footer and show the Home button. */
+  if (window.self !== window.top) document.documentElement.classList.add('embedded');
+</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="top-nav"><a href="index.html" class="home-icon-btn" aria-label="Back to Home" onclick="if (window.history.length > 1) { window.history.back(); return false; }"><img src="assets/ui/buttons/home.png" alt="Home" /></a></div>
-  <div class="about-header">
-    <img src="assets/ui/icon.png" class="crest-mini" alt="Slice Kingdom" />
-    <div>
-      <h1>Privacy Policy</h1>
-      <span class="badge">Slice Kingdom</span>
-    </div>
-  </div>
 
-  <div class="doc">
+<button class="home-fab" onclick="window.parent.postMessage('slicekingdom-go-home', '*')" aria-label="Home"></button>
+
+<div class="top">
+  <div class="wrap">
+    <header class="site">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="../assets/ui/icon-512.webp" alt="Slice Kingdom icon">
+        <span class="brand-name">Slice Kingdom</span>
+      </a>
+      <nav class="site" aria-label="Legal pages">
+      <a href="about.html">About</a>
+      <a href="privacy.html" class="current" aria-current="page">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span class="tile"></span> Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="lede">What Slice Kingdom collects, why, and what choices you have about it.</p>
+      <p class="meta">Last updated: November 2026</p>
+    </section>
+  </div>
+</div>
+
+<main class="content">
+  <div class="wrap">
+
     <h2>Overview</h2>
-    <p>Slice Kingdom is developed and published by <strong>Gemlight Empress</strong>. This Privacy Policy explains what information the Game collects, how it is used, and the choices available to you.</p>
+    <p>Slice Kingdom is developed and published by Gemlight Empress. This Privacy Policy explains what information the game collects, how it is used, and the choices available to you.</p>
+
+    <div class="section-divider"><span></span><span></span><span></span></div>
 
     <h2>Information We Collect</h2>
+
+    <h3>Game Data Stored on Your Device</h3>
+    <p>The game stores certain game-related information on your device, including:</p>
     <ul>
-      <li><strong>Locally stored game data:</strong> progress, Golden Seeds and Royal Grapes balances, XP, unlocked Boards/Swords/Boosters, and settings are stored on your device and are not transmitted to our servers by the base game.</li>
-      <li><strong>Google Play Games sign-in (required):</strong> a Google Play Games account is required to play. When you sign in, Google Play Games Services accesses your Google display name, avatar, and player identifier, and stores your Achievements and Leaderboard scores on Google's servers, governed by Google's own privacy policy.</li>
-      <li><strong>Player Profile data:</strong> your Player Profile (level, stats, mode records, and a locally generated Player ID) is stored on your device and backed up to Google Play Games Cloud Save — see "Cloud Save &amp; Progress Sync" below.</li>
-      <li><strong>Advertising identifiers:</strong> if advertising is enabled (Google AdMob), the ad network may collect device advertising identifiers, coarse location, and interaction data to serve and measure ads, subject to your device's ad-tracking settings.</li>
-      <li><strong>Purchase data:</strong> in-app purchases are processed by Google Play Billing. We do not directly receive or store your payment card details.</li>
-      <li><strong>Diagnostic data:</strong> anonymous crash and performance data may be collected to improve stability.</li>
+      <li>Your Golden Seeds and Royal Grapes</li>
+      <li>Boosters</li>
+      <li>Unlocked boards, swords and themes</li>
+      <li>Level progress and best scores</li>
+      <li>Achievements</li>
+      <li>Daily reward streak</li>
+      <li>Daily Challenge progress</li>
+      <li>The display name you choose</li>
+      <li>If you are signed in to Google Play Games: a copy of your Play Games display name and profile picture, used for your in-game profile</li>
+      <li>Whether you have completed (or skipped) the first-time tutorial</li>
+      <li>Sound, music, vibration and reminder settings</li>
     </ul>
 
-    <h2>How We Use Information</h2>
+    <h3>Google Play Games Sign-In</h3>
+    <p>The game uses Google Play Games Services. Signing in is optional, and the game is fully playable without it.</p>
     <ul>
-      <li>To save your game progress locally, and back it up to Google Play Games Cloud Save (see "Cloud Save &amp; Progress Sync" below).</li>
-      <li>To display your Achievements and Leaderboard standing through Google Play Games Services.</li>
-      <li>To display and measure advertising (where applicable) through Google AdMob.</li>
-      <li>To process in-app purchases through Google Play Billing.</li>
-      <li>To diagnose crashes and improve game performance.</li>
+      <li>If you have already signed in to this game with Google Play Games, Google signs you in automatically in the background when the game starts. Google may show its own brief &ldquo;Welcome&rdquo; banner.</li>
+      <li>If you have not signed in yet, the game simply continues as a guest and does not open any sign-in screen on its own. Google&rsquo;s own Play Games sign-in screen appears only if you choose to sign in yourself.</li>
+      <li>You can sign in at any time by tapping <strong>&ldquo;Sign in with Google Play&rdquo;</strong> in Settings &rarr; Player Profile.</li>
+    </ul>
+    <p>If you sign in, Google Play Games Services provides your:</p>
+    <ul>
+      <li>Player ID</li>
+      <li>Display name</li>
+      <li>Profile picture</li>
+    </ul>
+    <p>Your display name and profile picture appear on your profile in Settings, and a copy is kept on your device. They are not sent to any server of ours. Signing in also allows your game progress to be backed up using Google Play Games Cloud Save.</p>
+
+    <h3>Purchases</h3>
+    <p>In-app purchases of Royal Grapes are processed through Google Play Billing. Payment details are handled entirely by Google. We receive only confirmation of what was purchased.</p>
+
+    <h3>Advertising</h3>
+    <p>The game is free to play and shows advertisements through Google AdMob:</p>
+    <ul>
+      <li><strong>Banner ads</strong> in a reserved strip at the bottom of the screen. The strip appears on every screen except the home screen and while you are playing, and the screens are sized to sit above it so it never covers the game.</li>
+      <li><strong>Full-screen ads</strong> between games, for example after you finish a game and tap Play Again or Home.</li>
+      <li><strong>Optional rewarded ads</strong> that you choose to watch for a bonus: continuing a run with an extra life when your lives run out (Revive), or opening a chest.</li>
+    </ul>
+    <p>Google AdMob may collect device advertising identifiers, approximate location, and interaction data to serve and measure advertisements, subject to your device&rsquo;s advertising settings.</p>
+    <p><strong>Consent (EEA, UK and Switzerland):</strong> if you are in the European Economic Area, the United Kingdom or Switzerland, Google&rsquo;s consent form is shown before ads load, asking whether ads may be personalised. You can opt out of personalised advertising at any time through your device&rsquo;s own advertising settings, where you can also reset or delete your advertising ID.</p>
+
+    <h3>Analytics and Crash Reporting</h3>
+    <p>The Android app uses Google Analytics for Firebase to understand how the game is used, so we can improve it and fix problems. It records usage events such as app opens, screens viewed, session length and advertisements shown or rewarded, together with an app-instance identifier, device model, operating system version, app version and approximate country. It does not record your name or email address.</p>
+    <p>The game also uses <strong>Firebase Crashlytics</strong>, which records a report when the game crashes or hits an error: the device model, operating system version, app version and a technical stack trace. These reports contain no personal details and are used only to find and fix faults.</p>
+
+    <h3>App Updates</h3>
+    <p>When the game starts it asks Google Play whether a newer version of the app is available, so it can offer you the update. This check is handled entirely by Google Play and sends us nothing about you.</p>
+
+    <h2>How We Use Information</h2>
+    <p>We use the information described above to:</p>
+    <ul>
+      <li>Save your game progress and settings on your device.</li>
+      <li>Back up and sync your progress through Google Play Games Cloud Save while you are signed in.</li>
+      <li>Show your name and profile picture (your chosen name, or your Google Play Games name and picture if you sign in) on your in-game profile.</li>
+      <li>Deliver Royal Grapes that you purchase.</li>
+      <li>Display and measure advertising through Google AdMob, and ask for your consent where required.</li>
+      <li>Understand how the game is played and improve it, using Google Analytics for Firebase.</li>
+      <li>Send reminders, such as when your daily reward and a new Daily Challenge are ready. Reminders are on by default and can be turned off at any time in Settings; they are scheduled entirely on your device, and Android asks for notification permission before any is shown.</li>
     </ul>
 
     <h2>Third-Party Services</h2>
-    <p>The Game integrates the following third-party services, each governed by its own privacy policy:</p>
+    <p>The game uses the following third-party services, all provided by Google. Each is governed by Google&rsquo;s own privacy policy, which you can read at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>:</p>
     <ul>
-      <li>Google Play Games Services (required sign-in, Achievements, Leaderboards)</li>
-      <li>Google AdMob (advertising)</li>
-      <li>Google Play Billing (purchases)</li>
-      <li>Google Play Services (distribution, crash reporting)</li>
+      <li><strong>Google Play Games Services</strong> &mdash; sign-in, player profile, and Cloud Save.</li>
+      <li><strong>Google Play Billing</strong> &mdash; in-app purchases.</li>
+      <li><strong>Google AdMob</strong> &mdash; advertising, including Google&rsquo;s consent form where required.</li>
+      <li><strong>Google Analytics for Firebase</strong> &mdash; gameplay analytics.</li>
+      <li><strong>Firebase Crashlytics</strong> &mdash; crash and error reporting.</li>
+      <li><strong>Google Play Core (In-App Updates)</strong> &mdash; checking whether a newer version is available.</li>
     </ul>
 
-    <h2>Children's Privacy</h2>
-    <p>The Game is designed to be suitable for a general audience. We do not knowingly collect personal information from children beyond what is required for functionality such as advertising, which is configured to respect applicable child-directed treatment settings (e.g., Google's Families Ad Program) when the app is listed for a young audience.</p>
+    <h2>Children&rsquo;s Privacy</h2>
+    <p>The game is designed to be suitable for a general audience.</p>
+    <p>We do not knowingly collect personal information from children beyond what is required for the game to function, such as advertising, which is configured to respect applicable child-directed treatment settings when the app is listed for a young audience.</p>
 
     <h2>Cloud Save &amp; Progress Sync</h2>
-    <p>Your progress, Golden Seeds and Royal Grapes balances, XP, unlocked Boards/Swords/Boosters, and settings are saved on your device and automatically backed up to Google Play Games Cloud Save while you are signed in. Signing in with the same Google Play account on another device restores this progress there. If the same account is used on two devices, the most recently updated save is kept as the active one; the older save is not merged with it. A manual "Sync Now" option is also available in Player Profile. If you play without an internet connection, your progress continues saving locally and backs up automatically the next time you're online.</p>
+    <p>While you are signed in, your progress is saved on your device and backed up to Google Play Games Cloud Save automatically.</p>
+    <p>Playing on another device with the same Google account can restore your progress there. When the progress on a device and in your Cloud Save has both changed, the game shows you both and asks which one to keep.</p>
+    <p>If you play offline, your progress continues to be saved on your device and will sync the next time you are online. You can also manually initiate synchronization by tapping <strong>&ldquo;Sync Now&rdquo;</strong> in Settings &rarr; Player Profile.</p>
 
     <h2>Data Retention &amp; Deletion</h2>
-    <p>Locally stored progress can be erased at any time by clearing app data/storage through your device settings. Cloud-saved progress, Achievements, and Leaderboard data associated with your Google Play account are retained and deleted according to your Google Account settings.</p>
+    <p>You can erase your game progress at any time by using <strong>&ldquo;Reset Progress&rdquo;</strong> in Settings.</p>
+    <p>This clears the progress stored on your device and, if you are signed in, replaces your Cloud Save with a fresh start.</p>
+    <p>You can also clear the game&rsquo;s data through your device settings or uninstall the game.</p>
+    <p>Any data held by Google in connection with your Google account is retained and deleted according to your Google Account settings.</p>
 
     <h2>Your Choices</h2>
+    <p>You have the following choices:</p>
     <ul>
-      <li>You can opt out of personalized advertising through your device's ad settings.</li>
-      <li>You can disable vibration, sound, and music independently in the in-game Settings screen.</li>
+      <li>You can play entirely without signing in &mdash; the game never requires an account or an internet connection. You can sign in later with <strong>&ldquo;Sign in with Google Play&rdquo;</strong> in Settings &rarr; Player Profile.</li>
+      <li>You can opt out of personalised advertising, and reset or delete your advertising ID, in your device&rsquo;s advertising settings.</li>
+      <li>You can opt out of personalized advertising through your device&rsquo;s advertising settings.</li>
+      <li>You can turn off sound, music, vibration, and reminders in Settings.</li>
+      <li>You can change your display name at any time from your profile in Settings.</li>
+      <li>You can erase your game progress at any time using <strong>&ldquo;Reset Progress&rdquo;</strong> in Settings.</li>
     </ul>
 
-    <h2>Contact</h2>
-    <p>Questions about this policy can be directed to Gemlight Empress at <strong>gemlightempress@gmail.com</strong>.</p>
-
     <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy periodically to reflect changes to the Game or applicable law.</p>
+    <p>We may update this Privacy Policy from time to time to reflect changes to the game or applicable law.</p>
+    <p>When we make changes, we will update the <strong>Last Updated</strong> date above and ask you to review the updated policy in the game.</p>
+
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--gold)"></span><span style="background:var(--mint)"></span></div>
+      <div>
+        <strong>Questions about this Privacy Policy?</strong>
+        <p>Gemlight Empress<br>Email: <a href="mailto:support@gemlightempress.com">support@gemlightempress.com</a></p>
+      </div>
+    </div>
+
   </div>
-  <p class="footer-note">Slice Kingdom · Gemlight Empress</p>
-</div>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div class="foot-brand"><img src="../assets/ui/icon-512.webp" alt=""><span>&copy; 2026 Gemlight Empress. All rights reserved.</span></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
